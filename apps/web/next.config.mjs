@@ -4,7 +4,13 @@ import { withExpo } from '@expo/next-adapter';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  transpilePackages: ['react-native', 'react-native-web', 'expo'],
+  transpilePackages: [
+    'react-native',
+    'react-native-web',
+    'expo',
+    'nativewind',
+    'react-native-css-interop',
+  ],
   webpack: (config) => {
     // Set the alias from `react-native` to `react-native-web`
     config.resolve.alias = {

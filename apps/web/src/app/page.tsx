@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       Hello web
-      <Button text="Button" />
+      <Button  text="Button" />
     </div>
   );
 }
