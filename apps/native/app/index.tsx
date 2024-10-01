@@ -1,34 +1,18 @@
 import { Button } from '@repo/ui';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from "react-native";
 
-export default function Page() {
+export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Hello Expo</Text>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text>Edit app/index.tsx to edit this screen.</Text>
 
-      <Button text="Dale" />
+      <Button text="Button" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    padding: 24,
-  },
-  main: {
-    flex: 1,
-    justifyContent: 'center',
-    maxWidth: 960,
-    marginHorizontal: 'auto',
-  },
-  title: {
-    fontSize: 64,
-    fontWeight: 'bold',
-  },
-  subtitle: {
-    fontSize: 36,
-    color: '#38434D',
-  },
-});

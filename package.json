@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+    "clean": "turbo run clean && rm -rf node_modules"
   },
   "packageManager": "yarn@1.22.22",
   "engines": {
@@ -17,5 +16,12 @@
   ],
   "devDependencies": {
     "turbo": "^2.1.2"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-web": "~0.19.10",
+    "expo": "~51.0.34",
+    "tailwindcss": "^3.4.1"
   }
 }
