@@ -1,5 +1,6 @@
 const { getDefaultConfig } = require('expo/metro-config');
 const { FileStore } = require('metro-cache');
+const { withNativeWind } = require('nativewind/metro');
 const path = require('path');
 
 // Find the project and workspace directories
@@ -18,7 +19,9 @@ config.resolver.nodeModulesPaths = [
 ];
 
 config.cacheStores = [
-  new FileStore({ root: path.join(projectRoot, 'node_modules', '.cache', 'metro') }),
+  new FileStore({
+    root: path.join(projectRoot, 'node_modules', '.cache', 'metro'),
+  }),
 ];
 
-module.exports = config;
+module.exports = withNativeWind(config, { input: './global.css' });
