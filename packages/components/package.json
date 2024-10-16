@@ -1,17 +1,22 @@
 {
   "name": "@repo/components",
   "version": "1.0.0",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "ui/index.tsx",
+  "module": "ui/index.tsx",
   "scripts": {
-    "build": "tsup index.ts --format esm,cjs --dts",
-    "dev": "tsup index.ts --format esm,cjs --dts --watch"
+    "build": "tsup ui/index.tsx --format esm,cjs --dts",
+    "dev": "tsup ui/index.tsx --format esm,cjs --dts --watch"
   },
   "dependencies": {
+    "@gluestack-ui/button": "^1.0.7",
     "@gluestack-ui/nativewind-utils": "^1.0.25",
-    "nativewind": "4.0.1",
+    "@gluestack-ui/overlay": "^0.1.15",
+    "@gluestack-ui/toast": "^1.0.7",
+    "nativewind": "4.0.36",
     "react": "18.2.0",
     "react-native": "0.74.5",
+    "react-native-reanimated": "~3.10.1",
+    "react-native-svg": "^15.7.1",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
